@@ -17,5 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::redirect('/', 'cidade.index', 301);
+Route::redirect('/', '/cidade', 301);
 Route::resource('cidade', 'CidadeController');
